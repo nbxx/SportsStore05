@@ -22,5 +22,4 @@ namespace Vic.SportsStore.Domain.Concrete
             get { return _products; }
         }
     }
-
 }
