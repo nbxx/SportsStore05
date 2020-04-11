@@ -43,5 +43,4 @@ namespace Vic.SportsStore.WebApp.Controllers
             }
         }
     }
-
 }
