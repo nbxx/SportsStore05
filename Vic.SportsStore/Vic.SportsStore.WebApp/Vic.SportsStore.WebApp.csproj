@@ -123,7 +123,9 @@
     <Compile Include="Abstract\IAuthProvider.cs" />
     <Compile Include="App_Start\IocConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Concrete\EFAuthProvider.cs" />
     <Compile Include="Concrete\FormsAuthProvider.cs" />
+    <Compile Include="Concrete\InMemoryAuthProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CartController.cs" />

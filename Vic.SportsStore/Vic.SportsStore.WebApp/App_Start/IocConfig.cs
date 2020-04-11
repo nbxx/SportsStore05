@@ -30,7 +30,11 @@ namespace Vic.SportsStore.WebApp
                 .RegisterInstance<IOrderProcessor>(new EmailOrderProcessor(new EmailSettings()))
                 .PropertiesAutowired();
 
-            builder.RegisterInstance<IAuthProvider>(new FormsAuthProvider())
+            builder.RegisterType<EFDbContext>();
+
+            builder.RegisterType<EFAuthProvider>()
+                .PropertiesAutowired()
+                .As<IAuthProvider>()
                 .PropertiesAutowired();
 
             var container = builder.Build();
