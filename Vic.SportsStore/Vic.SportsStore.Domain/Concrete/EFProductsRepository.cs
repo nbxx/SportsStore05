@@ -34,6 +34,12 @@ namespace Vic.SportsStore.Domain.Concrete
                     dbEntry.Description = product.Description;
                     dbEntry.Price = product.Price;
                     dbEntry.Category = product.Category;
+
+                    if (product.ImageData != null)
+                    {
+                        dbEntry.ImageData = product.ImageData;
+                        dbEntry.ImageMimeType = product.ImageMimeType;
+                    }
                 }
             }
             context.SaveChanges();
